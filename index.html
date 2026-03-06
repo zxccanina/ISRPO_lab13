@@ -7,10 +7,51 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="custom.css"/>
     <body>
-        <div class="container">
-            <h1 class="text-center mt-5">Добро пожаловать в Bootstrap </h1>
-            <p class="text-center text-muted">Лабораторная работа №10</p>
-        </div>
+        <!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
+<a class="navbar-brand" href="#">MyPortfolio</a>
+<!-- Кнопка для мобильного меню -->
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav"
+aria-controls="navbarNav"
+aria-expanded="false"
+aria-label="Toggle navigation"
+>
+<span class="navbar-toggler-icon"></span>
+
+</button>
+<!-- Пункты меню -->
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link active" href="#home">Главная</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#about">О нас</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#services">Услуги</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact">Контакты</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<!-- Hero секция -->
+<div class="container-fluid bg-light py-5" id="home">
+<div class="container text-center">
+<h1 class="display-4">Добро пожаловать!</h1>
+<p class="lead">Это пример сайта, созданного с помощью Bootstrap 5</p>
+<button class="btn btn-primary btn-lg">Узнать больше</button>
+</div>
+</div>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
     </head>
