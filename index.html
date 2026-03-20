@@ -56,6 +56,157 @@ aria-label="Toggle navigation"
     </body>
     </head>
 </html>
+<!-- Секция с модальным окном и аккордеоном -->
+<div class="container my-5">
+<h2 class="text-center mb-5">Интерактивные компоненты</h2>
+<div class="row">
+<!-- Модальное окно -->
+<div class="col-md-6 mb-4">
+<h4>Модальное окно</h4>
+<p>
+Модальные окна используются для отображения важного контента поверх
+страницы.
+</p>
+<!-- Кнопка открытия модального окна -->
+<button
+type="button"
+class="btn btn-primary"
+data-bs-toggle="modal"
+data-bs-target="#exampleModal"
+>
+Открыть модальное окно
+</button>
+<!-- Само модальное окно -->
+<div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">
+Добро пожаловать!
+</h5>
+<button
+type="button"
+class="btn-close"
+data-bs-dismiss="modal"
+aria-label="Close"
+></button>
+</div>
+<div class="modal-body">
+Это пример модального окна Bootstrap. Здесь может быть любой
+контент: текст, формы, изображения.
+</div>
+<div class="modal-footer">
+<button
+type="button"
+class="btn btn-secondary"
+data-bs-dismiss="modal"
+>
+Закрыть
+</button>
+<button type="button" class="btn btn-primary">
+Сохранить изменения
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Аккордеон -->
+<div class="col-md-6 mb-4">
+<h4>Аккордеон</h4>
+<p>
+Аккордеоны позволяют компактно организовать большое количество
+информации.
+</p>
+<div class="accordion" id="accordionExample">
+<!-- Элемент 1 -->
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingOne">
+<button
+class="accordion-button"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#collapseOne"
+aria-expanded="true"
+aria-controls="collapseOne"
+>
+Что такое Bootstrap?
+</button>
+</h2>
+<div
+id="collapseOne"
+class="accordion-collapse collapse show"
+aria-labelledby="headingOne"
+data-bs-parent="#accordionExample"
+>
+<div class="accordion-body">
+Bootstrap — это популярный CSS-фреймворк для создания
+адаптивных и современных веб-сайтов.
+</div>
+</div>
+</div>
+<!-- Элемент 2 -->
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingTwo">
+<button
+class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#collapseTwo"
+aria-expanded="false"
+aria-controls="collapseTwo"
+>
+Какие преимущества Bootstrap?
+</button>
+</h2>
+<div
+id="collapseTwo"
+class="accordion-collapse collapse"
+aria-labelledby="headingTwo"
+data-bs-parent="#accordionExample"
+>
+<div class="accordion-body">
+Быстрая разработка, готовые компоненты, адаптивность,
+кроссбраузерность и большое сообщество разработчиков.
+</div>
+</div>
+</div>
+<!-- Элемент 3 -->
+<div class="accordion-item">
+<h2 class="accordion-header" id="headingThree">
+<button
+class="accordion-button collapsed"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#collapseThree"
+aria-expanded="false"
+aria-controls="collapseThree"
+>
+Как подключить Bootstrap?
+</button>
+</h2>
+<div
+id="collapseThree"
+class="accordion-collapse collapse"
+aria-labelledby="headingThree"
+data-bs-parent="#accordionExample"
+>
+<div class="accordion-body">
+Bootstrap можно подключить через CDN (быстро) или установить
+локально через npm (для продакшн-проектов).
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 <!-- Секция утилитных классов -->
 <div class="container my-5" id="about">
 <h2 class="text-center mb-5">О компании</h2>
